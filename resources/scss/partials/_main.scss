@@ -1,1 +1,26 @@
 @use "variables" as *;
+.container-series {
+    position: absolute;
+    top: -30px;
+}
+.action-comics-imgs img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.title-series {
+    font-weight: 600;
+}
+
+.bg-main-bottom {
+    background-color: $color-primary;
+}
+
+.main-bottom img {
+    width: calc(100% / 5);
+}
+.main-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,1 +1,33 @@
 @use "./variables" as *;
+.bg-dc {
+    background-repeat: repeat-x;
+}
+.footer-left {
+    height: 450px;
+}
+h4 {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+.li-custom-color {
+    color: rgb(149, 149, 149);
+}
+.logo-footer {
+    width: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-bg {
+    background-color: $bg-footer;
+}
+.btn-footer {
+    border-radius: 0;
+    border: 1.5px solid $color-primary;
+}
+.color-primary {
+    color: $color-primary;
+}
+footer img {
+    padding-right: 1rem;
+}

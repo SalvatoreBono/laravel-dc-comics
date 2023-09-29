@@ -1,1 +1,10 @@
 @use "./variables" as *;
+.li-navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 700;
+}
+.jumbo {
+    background-size: cover;
+    height: 400px;
+}

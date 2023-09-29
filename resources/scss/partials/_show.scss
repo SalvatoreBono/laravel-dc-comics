@@ -1,0 +1,25 @@
+@use "variables" as *;
+.custom-comics {
+    position: absolute;
+    top: -190px;
+    width: 250px;
+    height: 250px;
+}
+.bg-action-comics {
+    background-color: rgb(85, 186, 89);
+}
+.text-action-comics {
+    color: rgb(176, 238, 120);
+}
+
+.h-action-comics {
+    color: rgb(0, 59, 87);
+}
+.border-right {
+    border-right: 1.5px solid #000;
+    height: 50px;
+    padding-right: 1.5rem;
+}
+.img-adv {
+    width: 300px;
+}

@@ -24,4 +24,33 @@ class ComicController extends Controller
         ];
         return view('home-show', $dataShow);
     }
+    public function create()
+    {
+        return view('home-create');
+    }
+    public function store(Request $request)
+    {
+        /* validazione */
+        $data = $request->validate([
+            "title" => "required|string",
+            "description" => "required|string",
+            "thumb" => "required|string",
+            "price" => "required|integer",
+            "series" => "required|string",
+            "sale_date" => "required|date|after:today",
+            "type" => "required|string",
+            "artists" => "required|string",
+            "writers" => "required|string",
+        ]);
+        $newComic = new Comic();
+
+        /* Riempi il modello con il data */
+        $newComic->fill($data);
+
+        /* salvare i dati */
+        $newComic->save();
+
+        /* a quale pagina indirizzare l'utente all'invio dei dati */
+        return redirect()->route('homepage');
+    }
 }

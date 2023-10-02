@@ -40,9 +40,11 @@
                              <div class="pt-3 text-uppercase">{{ $comic['series'] }}</div>
                          </div>
                      @endforeach
-                     <button type="button" class="btn btn-primary m-auto mt-5 rounded-0 fw-bold">
-                         LOAD MORE
-                     </button>
+                     <a class="m-auto" href="{{ route('home.create') }}">
+                         <button type="button" class="btn btn-primary m-auto mt-5 rounded-0 fw-bold">
+                             ADD COMIC
+                         </button>
+                     </a>
                  </div>
              </div>
          </div>

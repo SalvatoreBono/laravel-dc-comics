@@ -40,7 +40,9 @@
                              <div class="pt-3 text-uppercase">{{ $comic['series'] }}</div>
                          </div>
                      @endforeach
-                     <a class="m-auto" href="{{ route('home.create') }}">
+                 </div>
+                 <div class="d-flex justify-content-center">
+                     <a href="{{ route('home.create') }}">
                          <button type="button" class="btn btn-primary m-auto mt-5 rounded-0 fw-bold">
                              ADD COMIC
                          </button>

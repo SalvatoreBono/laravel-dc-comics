@@ -20,8 +20,8 @@
             </div>
             <div class="mb-3 col-2">
                 <label for="formGroupExampleInput" class="form-label">Prezzo</label>
-                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Inserisci prezzo"
-                    name="price">
+                <input type="number" step="0.01" class="form-control" id="formGroupExampleInput"
+                    placeholder="Inserisci prezzo" name="price">
             </div>
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Series</label>

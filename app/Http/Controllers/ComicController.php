@@ -42,6 +42,8 @@ class ComicController extends Controller
             "artists" => "required|string",
             "writers" => "required|string",
         ]);
+        $data["artists"] = json_encode([$data["artists"]]);
+        $data["writers"] = json_encode([$data["writers"]]);
         $newComic = new Comic();
 
         /* Riempi il modello con il data */

@@ -10,8 +10,8 @@ class Comic extends Model
     use HasFactory;
     protected $casts = [
         "sale_date" => "date",
-        "artists" => "array",
-        "writers" => "array",
+        "artists" => "string",
+        "writers" => "string",
     ];
 
     protected $fillable = [

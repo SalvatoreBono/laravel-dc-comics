@@ -34,6 +34,7 @@
                  <div class="row row-cols-6 gy-5 action-comics-imgs">
                      @foreach ($comics as $comic)
                          <div class="col pb-5">
+                             {{--  <a href="{{ route('home.show', $comic->id) }}"> che porta  alla route show --}}
                              <a href="{{ route('home.show', $comic->id) }}">
                                  <img src="{{ $comic['thumb'] }}" alt="">
                              </a>
@@ -42,6 +43,7 @@
                      @endforeach
                  </div>
                  <div class="d-flex justify-content-center">
+                     {{--  <a href="{{ route('home.create') }}"> che porta alla route create --}}
                      <a href="{{ route('home.create') }}">
                          <button type="button" class="btn btn-primary m-auto mt-5 rounded-0 fw-bold">
                              ADD COMIC

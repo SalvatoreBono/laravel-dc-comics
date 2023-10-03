@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Index */
+
 Route::get('/', [ComicController::class, "index"])->name("homepage");
 
 /* Create */
@@ -24,3 +26,12 @@ Route::post('/', [ComicController::class, "store"])->name("home.store");
 
 /* Show */
 Route::get('/{id}', [ComicController::class, "show"])->name("home.show");
+
+/* Edit */
+Route::get('/{id}/edit', [ComicController::class, "edit"])->name("home.edit");
+
+/* Update */
+Route::put('/{id}', [ComicController::class, "update"])->name("home.update");
+
+/* Delete */
+Route::delete('/{id}', [ComicController::class, "destroy"])->name("home.destroy");

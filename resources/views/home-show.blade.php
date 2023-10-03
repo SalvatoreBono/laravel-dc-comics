@@ -9,6 +9,18 @@
         </div>
     </div>
     <div class="container pt-5 pb-5">
+        {{-- <a href="{{ route('home.edit', $comicsShow['id']) }}" che porta alla route edit --}}
+        <a href="{{ route('home.edit', $comicsShow['id']) }}" type="button" class="btn btn-info mb-3">Modifica</a>
+
+        {{-- action che porta alla route destroy --}}
+        <form action="{{ route('home.destroy', $comicsShow['id']) }}" method="POST">
+            @csrf()
+            {{-- specificare il metodo DELETE --}}
+            @method('DELETE')
+            {{-- specificare type submit --}}
+            <button type="submit" class="btn btn-danger mb-3">Elimina</button>
+        </form>
+
         <div class="d-flex">
             <div class="pe-5 col-8">
 
